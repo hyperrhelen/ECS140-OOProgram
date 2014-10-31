@@ -12,11 +12,11 @@ public class Jumble extends Seq{
   }
 
   public String toString(){
-    System.out.print("{ " +"temp" + ": ");
+    System.out.print("{ " + values.length + " : ");
     for (int i = 0; i < this.values.length; i++){
       System.out.print(this.values[i] + " " );
     }
-    return " }";
+    return "}";
   } 
 
 }//Jumble

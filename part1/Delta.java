@@ -8,6 +8,9 @@ public class Delta extends Seq{
     this.delta = delta;
   }
   public String toString(){
-    return "< " + this.num + " : " + this.initial + " &" + this.delta + " >";
+    if(this.num != 0)
+      return "< " + this.num + " : " + this.initial + " &" + this.delta + " >";
+    else
+      return "< 0 : 0 &0 >";
   }
 }// class Delta

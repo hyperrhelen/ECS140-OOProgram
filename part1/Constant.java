@@ -7,7 +7,10 @@ public class Constant extends Seq{
     this.value = value;
   }
   public String toString(){
+  if ( this.num != 0)
     return "[ " + this.num + " : " + this.value + " ]" ;
+  else
+    return "[ 0 : 0 ]";
   }
 
 }
