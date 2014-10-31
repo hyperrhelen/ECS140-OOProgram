@@ -1,12 +1,13 @@
-public class Constant{
+public class Constant extends Seq{
   private int num, value;
 
-  Constant( int num, int value):Seq(){
+  Constant( int num, int value){
+    super();
     this.num = num;
     this.value = value;
   }
-  private void toString(){
-    System.out.println("[ " + num + " : " + value + " ] " );
+  public String toString(){
+    return "[ " + this.num + " : " + this.value + " ]" ;
   }
 
 }
