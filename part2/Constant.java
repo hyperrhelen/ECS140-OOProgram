@@ -1,5 +1,5 @@
 public class Constant extends Seq{
-  private int num, value;
+  protected int num, value;
 
   Constant( int num, int value){
     super();

@@ -1,6 +1,6 @@
 public class Jumble extends Seq{
 
-  private int [] values ;
+  protected int [] values ;
 
 
   Jumble(int [] values){

@@ -1,5 +1,5 @@
 public class Delta extends Seq{
-  private int num, initial, delta;
+  protected int num, initial, delta;
 
   Delta(int num, int initial, int delta){
     super();
