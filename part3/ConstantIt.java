@@ -4,25 +4,25 @@ public class ConstantIt implements SeqIt {
   ConstantIt( Constant s){
     super();
     this.s = s;
-    index = 1;
+    index = 0;
   }
   //any more elements?
   public boolean hasNext(){
 
-     if (index == 1)
+     if (index < s.num)
        return true;
      else
        return false;
   }
 // return the next eleemnt and advance iterator to following item
   public int next(){
-
-    if (index > 0){
+ 
+    if (index >= s.num ){
       System.err.println("ConstantIt called past end");
       System.exit(1);
     }
-//    if (s.num == 0)
-//      return null;
+    if (s.num == 0)
+      System.exit(1);
     index++;
     return s.value;
   
